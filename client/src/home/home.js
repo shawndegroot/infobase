@@ -58,12 +58,7 @@ const FeaturedContentItem = ({
   is_new,
   is_youtube,
 }) => (
-  <li className="list-group-item list-group-item--home">
-    {is_new && (
-      <span className="badge badge--is-new">
-        <TM k={"new"} />
-      </span>
-    )}
+  <li className="list-group-item list-group-item--home d-flex justify-content-between">
     <a
       href={_.has(href, lang) ? href[lang] : href}
       target={is_link_out ? "_blank" : "_self"}
@@ -71,6 +66,11 @@ const FeaturedContentItem = ({
     >
       <TM k={text_key} />
     </a>
+    {is_new && (
+      <span className="badge badge--is-new">
+        <TM k={"new"} />
+      </span>
+    )}
   </li>
 );
 

@@ -116,6 +116,7 @@ class HistoricalProgramBars extends React.Component {
     if (is_a11y_mode) {
       return (
         <SmartDisplayTable
+          unsorted_initial={true}
           column_configs={column_configs}
           data={_.map(data, ({ label, data }) => ({
             label,

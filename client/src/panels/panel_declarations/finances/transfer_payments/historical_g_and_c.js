@@ -323,16 +323,17 @@ class DetailedHistTPItems extends React.Component {
                   active_indices: toggle_list(active_indices, id),
                 })
               }
-              Controls={
+              Controls={[
                 <SelectAllControl
+                  key="SelectAllControl"
                   SelectAllOnClick={() =>
                     this.setState({ active_indices: all_tp_idx })
                   }
                   SelectNoneOnClick={() =>
                     this.setState({ active_indices: [] })
                   }
-                />
-              }
+                />,
+              ]}
             />
           </div>
           <div className="fcol-md-8" style={{ position: "relative" }}>

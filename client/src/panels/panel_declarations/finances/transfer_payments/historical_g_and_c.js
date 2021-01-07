@@ -269,7 +269,6 @@ class DetailedHistTPItems extends React.Component {
         colorBy: (d) => color_scale(d.id),
         custom_table: (
           <SmartDisplayTable
-            unsorted_initial={true}
             data={custom_table_data}
             column_configs={column_configs}
           />

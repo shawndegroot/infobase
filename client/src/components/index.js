@@ -50,7 +50,7 @@ export {
   ModalButton,
 } from "./modals_and_popovers";
 export {
-  SmartDisplayTable,
+  DisplayTable,
   default_subject_name_sort_func,
   default_dept_name_sort_func,
   sort_func_template,

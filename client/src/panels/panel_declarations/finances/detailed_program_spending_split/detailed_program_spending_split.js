@@ -8,7 +8,7 @@ import { infobase_colors } from "src/core/color_schemes.js";
 
 import { is_a11y_mode } from "src/core/injected_build_constants.js";
 
-import { SmartDisplayTable, GraphOverlay } from "src/components";
+import { DisplayTable, GraphOverlay } from "src/components";
 import { toggle_list } from "src/general_utils.js";
 
 import {
@@ -115,7 +115,7 @@ class HistoricalProgramBars extends React.Component {
 
     if (is_a11y_mode) {
       return (
-        <SmartDisplayTable
+        <DisplayTable
           column_configs={column_configs}
           data={_.map(data, ({ label, data }) => ({
             label,
@@ -178,7 +178,7 @@ class HistoricalProgramBars extends React.Component {
                   left: 70,
                 }}
                 custom_table={
-                  <SmartDisplayTable
+                  <DisplayTable
                     column_configs={column_configs}
                     data={custom_table_data}
                   />
@@ -237,10 +237,7 @@ class DetailedProgramSplit extends React.Component {
         },
       };
       return (
-        <SmartDisplayTable
-          data={a11y_table_data}
-          column_configs={column_configs}
-        />
+        <DisplayTable data={a11y_table_data} column_configs={column_configs} />
       );
     }
 

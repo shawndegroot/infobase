@@ -34,7 +34,7 @@ import {
 import "./drr_summary.scss";
 
 const { result_simple_statuses } = businessConstants;
-const { SmartDisplayTable } = util_components;
+const { DisplayTable } = util_components;
 const { current_drr_key, result_docs } = Results;
 
 const current_drr_year = result_docs[current_drr_key].year;
@@ -143,7 +143,7 @@ const StatusGrid = (props) => {
       real_count,
     }));
     return (
-      <SmartDisplayTable
+      <DisplayTable
         data={a11y_data}
         column_configs={{
           label: {

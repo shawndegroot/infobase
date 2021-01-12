@@ -25,7 +25,7 @@ const { CovidEstimates, CovidInitiatives, Gov, Dept } = Subject;
 
 const { estimates_docs } = businessConstants;
 
-const { TabbedContent, SpinnerWrapper, SmartDisplayTable } = util_components;
+const { TabbedContent, SpinnerWrapper, DisplayTable } = util_components;
 
 const { text_maker, TM } = create_text_maker_component([text]);
 
@@ -239,7 +239,7 @@ const ByDepartmentTab = ({ panel_args }) => {
         }}
         className="medium-panel-text"
       />
-      <SmartDisplayTable
+      <DisplayTable
         data={_.map(pre_sorted_dept_estimates, (row) =>
           _.pick(row, _.keys(column_configs))
         )}
@@ -322,7 +322,7 @@ const ByInitiativeTab = ({ panel_args }) => {
         }}
         className="medium-panel-text"
       />
-      <SmartDisplayTable
+      <DisplayTable
         data={_.map(initiative_rows, (row) =>
           _.pick(row, _.keys(column_configs))
         )}

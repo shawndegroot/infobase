@@ -6,7 +6,7 @@ import React, { Fragment } from "react";
 import {
   SpinnerWrapper,
   TabbedContent,
-  SmartDisplayTable,
+  DisplayTable,
 } from "src/components/index.js";
 
 import { is_a11y_mode } from "src/core/injected_build_constants.js";
@@ -300,11 +300,11 @@ class TPMap extends React.Component {
             )}
             {is_a11y_mode && (
               <Fragment>
-                <SmartDisplayTable
+                <DisplayTable
                   column_configs={get_column_configs(false)}
                   data={format_a11y_data(transfer_payments_by_prov)}
                 />
-                <SmartDisplayTable
+                <DisplayTable
                   column_configs={get_column_configs(true)}
                   data={format_a11y_data(per_capita_by_prov)}
                 />

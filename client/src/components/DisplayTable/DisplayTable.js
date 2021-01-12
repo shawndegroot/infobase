@@ -47,7 +47,7 @@ const get_col_configs_with_defaults = (column_configs) =>
   - 1st column cannot be toggled off by user
   - Total row color is set to $textLightColor, see total_color
 */
-class DisplayTable extends React.Component {
+class _DisplayTable extends React.Component {
   constructor(props) {
     super(props);
 
@@ -472,7 +472,7 @@ class DisplayTable extends React.Component {
   }
 }
 // Wrapper component that picks column configs based on the size of data. Currently cannot pick table utils
-export class SmartDisplayTable extends React.Component {
+export class DisplayTable extends React.Component {
   render() {
     const { data, show_search, show_sort, column_configs } = this.props;
     const col_configs_with_defaults = get_col_configs_with_defaults(
@@ -490,10 +490,10 @@ export class SmartDisplayTable extends React.Component {
       })
     );
     return (
-      <DisplayTable {...this.props} column_configs={smart_column_configs} />
+      <_DisplayTable {...this.props} column_configs={smart_column_configs} />
     );
   }
 }
-SmartDisplayTable.defaultProps = {
+DisplayTable.defaultProps = {
   unsorted_initial: true,
 };

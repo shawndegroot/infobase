@@ -37,11 +37,7 @@ import {
 
 import "./result_flat_table.scss";
 
-const {
-  SpinnerWrapper,
-  SmartDisplayTable,
-  sort_func_template,
-} = util_components;
+const { SpinnerWrapper, DisplayTable, sort_func_template } = util_components;
 
 const { current_drr_key } = Results;
 const { months } = businessConstants;
@@ -233,7 +229,7 @@ const indicator_table_from_list = (indicator_list, subject) => {
     status: ind.indicator.status_key,
   }));
   return (
-    <SmartDisplayTable
+    <DisplayTable
       table_name={text_maker("result_flat_table_title", {
         year: current_drr_year,
       })}

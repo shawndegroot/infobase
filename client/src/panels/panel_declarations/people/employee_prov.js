@@ -23,7 +23,7 @@ import { calculate_common_text_args } from "./calculate_common_text_args.js";
 import text from "./employee_prov.yaml";
 
 const { text_maker, TM } = create_text_maker_component(text);
-const { SmartDisplayTable } = util_components;
+const { DisplayTable } = util_components;
 
 const { people_years } = year_templates;
 const years = _.map(people_years, (y) => run_template(y));
@@ -135,7 +135,7 @@ class ProvPanel extends React.Component {
         )}
         {is_a11y_mode && (
           <Col size={12} isGraph>
-            <SmartDisplayTable
+            <DisplayTable
               column_configs={{
                 label: {
                   index: 0,

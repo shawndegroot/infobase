@@ -7,7 +7,7 @@ import MediaQuery from "react-responsive";
 
 import { textColor } from "src/core/color_defs.js";
 
-import { SmartDisplayTable } from "../../components/index.js";
+import { DisplayTable } from "../../components/index.js";
 import { breakpoints } from "../../core/breakpoint_defs.js";
 import { newIBCategoryColors } from "../../core/color_schemes.js";
 import { formats } from "../../core/format.js";
@@ -231,7 +231,7 @@ export class CircleProportionChart extends React.Component {
       { label: child_name, value: child_value },
     ];
     const table = !disable_table_view && (
-      <SmartDisplayTable
+      <DisplayTable
         table_name={table_name || text_maker("default_table_name")}
         column_configs={column_configs}
         data={table_data}

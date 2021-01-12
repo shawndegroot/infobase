@@ -24,7 +24,7 @@ import { text_maker, TM } from "./gnc_text_provider.js";
 
 const { transfer_payments } = businessConstants;
 const { std_years } = year_templates;
-const { SmartDisplayTable } = util_components;
+const { DisplayTable } = util_components;
 
 const exp_years = std_years.map((year) => year + "exp");
 
@@ -224,7 +224,7 @@ class DetailedHistTPItems extends React.Component {
       return (
         <div>
           {title_el}
-          <SmartDisplayTable
+          <DisplayTable
             data={_.map(rows, (record) => ({
               label: record.tp,
               ..._.chain(std_years)
@@ -268,7 +268,7 @@ class DetailedHistTPItems extends React.Component {
         },
         colorBy: (d) => color_scale(d.id),
         custom_table: (
-          <SmartDisplayTable
+          <DisplayTable
             data={custom_table_data}
             column_configs={column_configs}
           />

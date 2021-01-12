@@ -2,10 +2,7 @@ import _ from "lodash";
 import React, { Fragment } from "react";
 
 
-import {
-  default_dept_name_sort_func,
-  SmartDisplayTable,
-} from "../../../components";
+import { default_dept_name_sort_func, DisplayTable } from "../../../components";
 import {
   Subject,
   create_text_maker_component,
@@ -60,7 +57,7 @@ const DpSummary = ({
         />
       </div>
       <HeightClippedGraph clipHeight={330}>
-        <SmartDisplayTable
+        <DisplayTable
           table_name={"Government DP"}
           data={rows_of_counts_by_dept}
           column_configs={column_configs}

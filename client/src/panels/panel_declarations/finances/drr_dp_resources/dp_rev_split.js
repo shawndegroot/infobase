@@ -3,8 +3,7 @@ import React from "react";
 
 import { textGreen, textRed } from "src/core/color_defs.js";
 
-
-import { Format, SmartDisplayTable } from "../../../../components";
+import { Format, DisplayTable } from "../../../../components";
 import {
   year_templates,
   run_template,
@@ -135,7 +134,7 @@ export const declare_dp_rev_split_panel = () =>
             title={text_maker("dp_rev_split_title")}
             {...{ footnotes, sources, glossary_keys }}
           >
-            <SmartDisplayTable
+            <DisplayTable
               table_name={text_maker("dp_rev_split_title")}
               data={table_data}
               column_configs={column_configs}

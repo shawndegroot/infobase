@@ -20,7 +20,7 @@ import {
 
 import { text_maker, TM } from "./vote_stat_text_provider.js";
 
-const { SmartDisplayTable, default_dept_name_sort_func } = util_components;
+const { DisplayTable, default_dept_name_sort_func } = util_components;
 
 const main_col = "{{est_in_year}}_estimates";
 
@@ -185,7 +185,7 @@ const planned_vote_or_stat_render = (vs) =>
           />
         </Col>
         <Col isGraph size={6}>
-          <SmartDisplayTable
+          <DisplayTable
             data={data_with_complement_amt}
             column_configs={column_configs}
           />

@@ -26,7 +26,7 @@ import { text_maker, TM } from "./sobj_text_provider.js";
 
 const { sos } = businessConstants;
 const { std_years } = year_templates;
-const { SmartDisplayTable } = util_components;
+const { DisplayTable } = util_components;
 
 const years = _.map(std_years, run_template);
 
@@ -58,10 +58,7 @@ const get_custom_table = (data, active_sobjs) => {
       .value(),
   };
   return (
-    <SmartDisplayTable
-      data={custom_table_data}
-      column_configs={column_configs}
-    />
+    <DisplayTable data={custom_table_data} column_configs={column_configs} />
   );
 };
 

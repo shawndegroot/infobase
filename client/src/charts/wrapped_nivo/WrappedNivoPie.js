@@ -4,7 +4,7 @@ import { scaleOrdinal } from "d3-scale";
 import _ from "lodash";
 import React from "react";
 
-import { Format, SmartDisplayTable } from "../../components/index.js";
+import { Format, DisplayTable } from "../../components/index.js";
 import { newIBCategoryColors } from "../../core/color_schemes.js";
 import { formats } from "../../core/format.js";
 import { TabularLegend } from "../legends";
@@ -93,7 +93,7 @@ export class WrappedNivoPie extends React.Component {
     };
 
     const table = !disable_table_view && (
-      <SmartDisplayTable
+      <DisplayTable
         data={table_data}
         column_configs={column_configs}
         table_name={table_name || nivo_common_text_maker("default_table_name")}

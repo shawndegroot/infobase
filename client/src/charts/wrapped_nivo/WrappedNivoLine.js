@@ -9,7 +9,7 @@ import {
   backgroundColor,
 } from "src/core/color_defs.js";
 
-import { SmartDisplayTable } from "../../components/index.js";
+import { DisplayTable } from "../../components/index.js";
 import { IconZoomIn, IconZoomOut } from "../../icons/icons.js";
 
 import {
@@ -131,7 +131,7 @@ export class WrappedNivoLine extends React.Component {
           .value(),
       };
       return (
-        <SmartDisplayTable
+        <DisplayTable
           data={table_data}
           column_configs={column_configs}
           table_name={table_name || text_maker("default_table_name")}

@@ -23,7 +23,7 @@ import {
 
 import text from "./goco.yaml";
 
-const { SmartDisplayTable } = util_components;
+const { DisplayTable } = util_components;
 const { Tag } = Subject;
 
 const { text_maker, TM } = create_text_maker_component(text);
@@ -139,7 +139,7 @@ class Goco extends React.Component {
     };
 
     const custom_table = (
-      <SmartDisplayTable
+      <DisplayTable
         data={parent_table_data}
         column_configs={table_column_configs}
       />
@@ -154,7 +154,7 @@ class Goco extends React.Component {
       return {
         key: sa.name,
         table: (
-          <SmartDisplayTable
+          <DisplayTable
             data={child_table_data}
             column_configs={table_column_configs}
           />

@@ -1,5 +1,6 @@
 import _ from "lodash";
 
+import { services_feature_flag } from "../core/injected_build_constants.js";
 import { create_text_maker } from "../models/text.js";
 
 import { infograph_href_template } from "./infographic_link.js";
@@ -40,7 +41,7 @@ const base_configs = [
     title: text_maker("results_title"),
     description: text_maker("results_desc"),
   },
-  {
+  services_feature_flag && {
     id: "services",
     title: text_maker("services_title"),
     description: text_maker("services_desc"),

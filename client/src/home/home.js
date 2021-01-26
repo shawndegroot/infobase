@@ -4,7 +4,10 @@ import MediaQuery from "react-responsive";
 
 import { highlightColor } from "src/core/color_defs.js";
 
-import { lang } from "src/core/injected_build_constants.js";
+import {
+  lang,
+  services_feature_flag,
+} from "src/core/injected_build_constants.js";
 
 import {
   EverythingSearch,
@@ -129,11 +132,13 @@ const HomeLayout = (props) => (
           img_url={get_static_url("svg/people.svg")}
           title={<TM k="home_ppl_title" />}
         />
-        <TrinityItem
-          href="#orgs/gov/gov/infograph/services"
-          img_url={get_static_url("svg/service.svg")}
-          title={<TM k="home_services_title" />}
-        />
+        {services_feature_flag && (
+          <TrinityItem
+            href="#orgs/gov/gov/infograph/services"
+            img_url={get_static_url("svg/service.svg")}
+            title={<TM k="home_services_title" />}
+          />
+        )}
         <TrinityItem
           href="#orgs/gov/gov/infograph/results"
           img_url={get_static_url("svg/results.svg")}

@@ -1,6 +1,5 @@
 import _ from "lodash";
 
-import { lang } from "../core/injected_build_constants.js";
 import { create_text_maker } from "../models/text.js";
 
 import { infograph_href_template } from "./infographic_link.js";
@@ -43,8 +42,8 @@ const base_configs = [
   },
   {
     id: "services",
-    title: _.constant(text.services_title[lang]),
-    description: _.constant(text.services_desc[lang]),
+    title: text_maker("services_title"),
+    description: text_maker("services_desc"),
   },
   {
     id: "related",

@@ -62,7 +62,6 @@ const EstimatesComparison = retrying_react_lazy(() =>
 const PrivacyStatement = retrying_react_lazy(() =>
   import("../PrivacyStatement/PrivacyStatement.js")
 );
-const TreeMap = retrying_react_lazy(() => import("../TreeMap/TreeMap.js"));
 const TextDiff = retrying_react_lazy(() => import("../TextDiff/TextDiff.js"));
 const Lab = retrying_react_lazy(() => import("../InfoLab/InfoLab.js"));
 const IsolatedPanel = retrying_react_lazy(() =>
@@ -219,12 +218,6 @@ export class App extends React.Component {
                   <Route
                     path="/partition/:perspective?/:data_type?"
                     component={PartitionRoute}
-                  />
-                )}
-                {!is_a11y_mode && (
-                  <Route
-                    path="/treemap/:perspective?/:color_var?/:filter_var?/:year?/:get_changes?"
-                    component={TreeMap}
                   />
                 )}
                 <Route path="/survey" component={Survey} />

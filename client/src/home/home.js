@@ -254,10 +254,10 @@ const SubAppLayout = (props) => (
           <div className="fcol-md-3 fcol-sm-6 linkcard">
             <CardTopImage
               tmf={home_tm}
-              img_src={get_static_url("svg/lab.svg")}
-              title_key="lab_home_title"
-              text_key="lab_home_text"
-              link_href="#lab"
+              img_src={get_static_url("svg/DPs-inverted.svg")}
+              title_key="home_diff_title"
+              text_key="home_diff_text"
+              link_href="#diff"
             />
           </div>
         </div>

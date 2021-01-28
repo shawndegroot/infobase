@@ -11,7 +11,6 @@ import {
   create_text_maker_component,
   CardTopImage,
   ContainerEscapeHatch,
-  TrinityItem,
 } from "../components/index.js";
 import { log_standard_event } from "../core/analytics.js";
 
@@ -50,29 +49,6 @@ export default class Home extends React.Component {
   }
 }
 
-const FeaturedContentItem = ({
-  text_key,
-  href,
-  is_link_out,
-  is_new,
-  is_youtube,
-}) => (
-  <li className="list-group-item list-group-item--home">
-    {is_new && (
-      <span className="badge badge--is-new">
-        <TM k={"new"} />
-      </span>
-    )}
-    <a
-      href={_.has(href, lang) ? href[lang] : href}
-      target={is_link_out ? "_blank" : "_self"}
-      rel={is_link_out ? "noopener noreferrer" : ""}
-    >
-      <TM k={text_key} />
-    </a>
-  </li>
-);
-
 const HomeLayout = (props) => (
   <div className="home-root">
     <div
@@ -88,10 +64,10 @@ const HomeLayout = (props) => (
         <h2 style={{ marginTop: 0 }}>
           <TM k="home_sub_title" />
         </h2>
-        <div className="flag">
+        <div className="flagline">
           <img aria-hidden="true" src={get_static_url("svg/flagline.svg")} />
         </div>
-        <div className="search-box">
+        <div className="home-search-box">
           <EverythingSearch
             include_gov={false}
             search_text={home_tm("everything_search_placeholder")}
@@ -117,35 +93,29 @@ const HomeLayout = (props) => (
     </div>
 
     <div className="container">
-      <div className="home-trinity-container frow">
-        <TrinityItem
-          href="#orgs/gov/gov/infograph/financial"
-          img_url={get_static_url("svg/expend.svg")}
-          title={<TM k="home_finance_title" />}
-        />
-        <TrinityItem
-          href="#orgs/gov/gov/infograph/people"
-          img_url={get_static_url("svg/people.svg")}
-          title={<TM k="home_ppl_title" />}
-        />
-        <TrinityItem
-          href="#orgs/gov/gov/infograph/results"
-          img_url={get_static_url("svg/results.svg")}
-          title={<TM k="home_results_title" />}
-        />
-      </div>
-      <div className="frow featured-home-cols">
-        <div className="fcol-md-6 featured-home-cols__primary">
+      <div className="frow home-featured-row">
+        <div className="fcol-md-7 gov-infographic-links">
+          <GovInfographicLinkItem
+            href="#orgs/gov/gov/infograph/financial"
+            img_url={get_static_url("svg/expend.svg")}
+            title={<TM k="home_finance_title" />}
+          />
+          <GovInfographicLinkItem
+            href="#orgs/gov/gov/infograph/people"
+            img_url={get_static_url("svg/people.svg")}
+            title={<TM k="home_ppl_title" />}
+          />
+          <GovInfographicLinkItem
+            href="#orgs/gov/gov/infograph/results"
+            img_url={get_static_url("svg/results.svg")}
+            title={<TM k="home_results_title" />}
+          />
+        </div>
+        <div className="fcol-md-5 featured-home-col">
           <h2>
             <TM k="featured_data_title" />
           </h2>
-          <div>
-            <ul className="list-group list-group--quick-links">
-              {_.map(props.featured_content_items, (item) => (
-                <FeaturedContentItem key={item.text_key} {...item} />
-              ))}
-            </ul>
-          </div>
+          <FeaturedContent items={props.featured_content_items} />
         </div>
       </div>
     </div>
@@ -177,12 +147,42 @@ const HomeLayout = (props) => (
   </div>
 );
 
+const GovInfographicLinkItem = ({ img_url, title, href, onClick }) => (
+  <a href={href} className="gov-infographic-link-item" onClick={onClick}>
+    <div className="gov-infographic-link-item__title">{title}</div>
+    <div className="gov-infographic-link-item__icon">
+      <img aria-hidden="true" src={img_url} />
+    </div>
+  </a>
+);
+
+const FeaturedContent = ({ items }) => (
+  <ul className="featured-content-list list-group">
+    {_.map(items, ({ text_key, href, is_link_out, is_new }) => (
+      <li className="list-group-item" key={text_key}>
+        <a
+          href={_.has(href, lang) ? href[lang] : href}
+          target={is_link_out ? "_blank" : "_self"}
+          rel={is_link_out ? "noopener noreferrer" : ""}
+        >
+          <TM k={text_key} />
+        </a>
+        {is_new && (
+          <span className="badge badge--is-new">
+            <TM k={"new"} />
+          </span>
+        )}
+      </li>
+    ))}
+  </ul>
+);
+
 const SubAppLayout = (props) => (
   <div className="home-root">
     <div className="container">
-      <div className="xtralinks">
+      <div className="subapp-linkcards">
         <div className="frow">
-          <div className="fcol-md-3 fcol-sm-6 linkcard">
+          <div className="fcol-md-3 fcol-sm-6 subapp-linkcard">
             <CardTopImage
               tmf={home_tm}
               img_src={get_static_url("svg/structure.svg")}
@@ -191,7 +191,7 @@ const SubAppLayout = (props) => (
               link_href="#igoc"
             />
           </div>
-          <div className="fcol-md-3 fcol-sm-6 linkcard">
+          <div className="fcol-md-3 fcol-sm-6 subapp-linkcard">
             <CardTopImage
               tmf={home_tm}
               img_src={get_static_url("svg/compare-estimates.svg")}
@@ -200,7 +200,7 @@ const SubAppLayout = (props) => (
               link_href="#compare_estimates"
             />
           </div>
-          <div className="fcol-md-3 fcol-sm-6 linkcard">
+          <div className="fcol-md-3 fcol-sm-6 subapp-linkcard">
             <CardTopImage
               tmf={home_tm}
               img_src={get_static_url("svg/explorer.svg")}
@@ -211,7 +211,7 @@ const SubAppLayout = (props) => (
           </div>
         </div>
         <div className="frow">
-          <div className="fcol-md-3 fcol-sm-6 linkcard">
+          <div className="fcol-md-3 fcol-sm-6 subapp-linkcard">
             <CardTopImage
               tmf={home_tm}
               img_src={get_static_url("svg/builder.svg")}
@@ -220,7 +220,7 @@ const SubAppLayout = (props) => (
               link_href="#rpb"
             />
           </div>
-          <div className="fcol-md-3 fcol-sm-6 linkcard">
+          <div className="fcol-md-3 fcol-sm-6 subapp-linkcard">
             <CardTopImage
               tmf={home_tm}
               img_src={get_static_url("svg/departmental-plans.svg")}

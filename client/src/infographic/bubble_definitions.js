@@ -36,15 +36,15 @@ const base_configs = [
     description: text_maker("people_desc"),
     enable_panel_filter: true,
   },
-  {
-    id: "results",
-    title: text_maker("results_title"),
-    description: text_maker("results_desc"),
-  },
   services_feature_flag && {
     id: "services",
     title: text_maker("services_title"),
     description: text_maker("services_desc"),
+  },
+  {
+    id: "results",
+    title: text_maker("results_title"),
+    description: text_maker("results_desc"),
   },
   {
     id: "related",

@@ -207,15 +207,6 @@ const SubAppLayout = (props) => (
           <div className="fcol-md-3 fcol-sm-6 linkcard">
             <CardTopImage
               tmf={home_tm}
-              img_src={get_static_url("svg/partition-icon.svg")}
-              title_key="partition_home_title"
-              text_key="partition_home_text"
-              link_href="#partition"
-            />
-          </div>
-          <div className="fcol-md-3 fcol-sm-6 linkcard">
-            <CardTopImage
-              tmf={home_tm}
               img_src={get_static_url("svg/compare-estimates.svg")}
               title_key="estimates_comp_home_title"
               text_key="estimates_comp_home_text_supps"

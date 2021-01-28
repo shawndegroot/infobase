@@ -2,7 +2,6 @@ import _ from "lodash";
 import React from "react";
 import { withRouter } from "react-router-dom";
 
-
 import {
   create_text_maker_component,
   AlertBanner,
@@ -98,11 +97,11 @@ const Home = (props) => {
 
         <section>
           <h3>
-            <a href={"#lab/"}>
-              <TM k="lab_home_title" />
+            <a href={"#diff/"}>
+              <TM k="home_diff_title" />
             </a>
           </h3>
-          <TM k="lab_home_text" />
+          <TM k="home_diff_text" />
         </section>
 
         <section>

@@ -10,7 +10,6 @@ import {
   EverythingSearch,
   create_text_maker_component,
   CardTopImage,
-  CardLeftImage,
   ContainerEscapeHatch,
   TrinityItem,
 } from "../components/index.js";
@@ -136,28 +135,7 @@ const HomeLayout = (props) => (
         />
       </div>
       <div className="frow featured-home-cols">
-        <div className="fcol-md-7 featured-home-cols__additional">
-          <div className="col-content">
-            <CardLeftImage
-              tmf={home_tm}
-              img_src={get_static_url("svg/DPs.svg")}
-              title_key="quick_link_DRR_1920"
-              text_key="drr_home_text"
-              link_key="check_home_link"
-              link_href="#orgs/gov/gov/infograph/results/.-.-(panel_key.-.-'gov_drr)"
-            />
-          </div>
-          <div className="col-content">
-            <CardLeftImage
-              tmf={home_tm}
-              img_src={get_static_url("svg/compare-estimates-white.svg")}
-              title_key="estimates_comp_home_title"
-              text_key="estimates_comp_home_text_supps"
-              link_href="#compare_estimates"
-            />
-          </div>
-        </div>
-        <div className="fcol-md-5 featured-home-cols__primary">
+        <div className="fcol-md-12 featured-home-cols__primary">
           <h2>
             <TM k="featured_data_title" />
           </h2>
@@ -207,6 +185,15 @@ const SubAppLayout = (props) => (
           <div className="fcol-md-3 fcol-sm-6 linkcard">
             <CardTopImage
               tmf={home_tm}
+              img_src={get_static_url("svg/structure.svg")}
+              title_key="igoc_home_title"
+              text_key="igoc_home_desc"
+              link_href="#igoc"
+            />
+          </div>
+          <div className="fcol-md-3 fcol-sm-6 linkcard">
+            <CardTopImage
+              tmf={home_tm}
               img_src={get_static_url("svg/compare-estimates.svg")}
               title_key="estimates_comp_home_title"
               text_key="estimates_comp_home_text_supps"
@@ -216,23 +203,14 @@ const SubAppLayout = (props) => (
           <div className="fcol-md-3 fcol-sm-6 linkcard">
             <CardTopImage
               tmf={home_tm}
-              img_src={get_static_url("svg/structure.svg")}
-              title_key="igoc_home_title"
-              text_key="igoc_home_desc"
-              link_href="#igoc"
-            />
-          </div>
-        </div>
-        <div className="frow">
-          <div className="fcol-md-3 fcol-sm-6 linkcard">
-            <CardTopImage
-              tmf={home_tm}
               img_src={get_static_url("svg/explorer.svg")}
               title_key="explorer_home_title"
               text_key="explorer_home_text"
               link_href="#tag-explorer"
             />
           </div>
+        </div>
+        <div className="frow">
           <div className="fcol-md-3 fcol-sm-6 linkcard">
             <CardTopImage
               tmf={home_tm}
@@ -245,7 +223,7 @@ const SubAppLayout = (props) => (
           <div className="fcol-md-3 fcol-sm-6 linkcard">
             <CardTopImage
               tmf={home_tm}
-              img_src={get_static_url("svg/DPs-inverted.svg")}
+              img_src={get_static_url("svg/departmental-plans.svg")}
               title_key="home_diff_title"
               text_key="home_diff_text"
               link_href="#diff"

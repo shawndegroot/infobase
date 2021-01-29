@@ -12,7 +12,7 @@ principle_1_name:
 
 principle_1_desc:
   en: Mirroring documents such as the Public Accounts, Estimates, and Departmental Plans in a timely manner. The data you find here will match what you find in public reports as they are tabled.
-  fr: L'InfoBase du GC reflète en temps opportun des documents, tels que les comptes publics, les budgets des dépenses et les plans ministériel. Vous y trouverez des données qui correspondent à celles des rapports publics au fur et à mesure de leur dépôt.
+  fr: InfoBase du GC reflète en temps opportun des documents, tels que les comptes publics, les budgets des dépenses et les plans ministériel. Vous y trouverez des données qui correspondent à celles des rapports publics au fur et à mesure de leur dépôt.
 
 principle_2_name:
   en: Balanced and Comprehensive
@@ -112,7 +112,7 @@ our_data_sub_text_1:
     Nous comptons sur plusieurs publications gouvernementales (p. ex. les Comptes publics, les budgets des dépenses, les plans ministériels et les rapports financiers trimestriels). 
     Vous trouverez la liste complète dans la [page sur les données](#metadata).
 
-    L'InfoBase du GC regroupe ces différents ensembles de données pour donner à l'utilisateur une image claire des dépenses gouvernementales et de l'efficacité des différentes initiatives financées par le gouvernement. Grâce au menu déroulant, l'utilisateur peut facilement obtenir une image similaire pour chacun des ministères ou même pour un programme précis.
+    InfoBase du GC regroupe ces différents ensembles de données pour donner à l'utilisateur une image claire des dépenses gouvernementales et de l'efficacité des différentes initiatives financées par le gouvernement. Grâce au menu déroulant, l'utilisateur peut facilement obtenir une image similaire pour chacun des ministères ou même pour un programme précis.
 
 our_data_sub_title_2:
   en: What is our added value?
@@ -140,14 +140,14 @@ our_data_sub_text_2:
     autrefois obscures.
 
 
-    L'équipe de l'InfoBase du GC est obsédée par la qualité des données et, à notre avis, cela commence avant le début de la collecte. À cette fin, nous avons développé une technologie qui permet de saisir
+    L'équipe de InfoBase du GC est obsédée par la qualité des données et, à notre avis, cela commence avant le début de la collecte. À cette fin, nous avons développé une technologie qui permet de saisir
     les données essentielles des ministères et avons mis en place des mécanismes pour assurer la qualité, l'exactitude et la fiabilité de toutes nos données. 
 
 
-    Nous savons qu'un chiffre ne dit pas toujours tout, c'est pourquoi l'InfoBase du GC vient en aide aux utilisateurs en leur présentant en complément des renseignements contextuels. 
+    Nous savons qu'un chiffre ne dit pas toujours tout, c'est pourquoi InfoBase du GC vient en aide aux utilisateurs en leur présentant en complément des renseignements contextuels. 
     Nous collaborons avec les organisations gouvernementales pour expliquer des données intéressantes telles qu'une hausse ou une baisse des dépenses, ou encore la situation concernant un résultat précis.
 
-    Alors que la majorité des données de l'InfoBase du GC sont accessibles aux utilisateurs sur le Portail de {{ext_link "données ouvertes" "https://ouvert.canada.ca/fr/donnees-ouvertes"}} du gouvernement du Canada, l'InfoBase du GC est la seule tentative d'intégration de ces ensembles de données dans un référentiel unique destiné aux parlementaires, aux fonctionnaires et à la population canadienne. À cette fin, l'InfoBase du GC est évolue constamment avec l'ajout de nouvelles sources de données, de visualisations et d’explications. <a href="#contact">Communiquez avec nous</a> si vous avez des données, des réflexions ou des idées à partager!
+    Alors que la majorité des données de InfoBase du GC sont accessibles aux utilisateurs sur le Portail de {{ext_link "données ouvertes" "https://ouvert.canada.ca/fr/donnees-ouvertes"}} du gouvernement du Canada, InfoBase du GC est la seule tentative d'intégration de ces ensembles de données dans un référentiel unique destiné aux parlementaires, aux fonctionnaires et à la population canadienne. À cette fin, InfoBase du GC est évolue constamment avec l'ajout de nouvelles sources de données, de visualisations et d’explications. <a href="#contact">Communiquez avec nous</a> si vous avez des données, des réflexions ou des idées à partager!
 
 behind_scenes_title:
   en: Behind the Scenes
@@ -190,7 +190,7 @@ behind_scenes_sub_text_2:
     {{ext_link "Apache license version 2.0" "https://www.apache.org/licenses/LICENSE-2.0"}}, or © {{ext_link "The Wikimedia Foundation, Inc" "https://commons.wikimedia.org/wiki/Main_Page"}}, licensed 
     under the {{ext_link "MIT license" "https://opensource.org/licenses/MIT"}}.
   fr: |
-    Vous pouvez trouver le code source du l'InfoBase du GC {{ext_link "sur GitHub" "https://github.com/TBS-EACPD/infobase"}}.
+    Vous pouvez trouver le code source du InfoBase du GC {{ext_link "sur GitHub" "https://github.com/TBS-EACPD/infobase"}}.
     
     Sauf indication contraire, le code source de ce projet est protégé par le droit d'auteur de la Couronne du gouvernement du Canada et distribué 
     sous la {{ext_link "licence MIT" "https://github.com/TBS-EACPD/infobase/blob/master/LICENSE"}}.
@@ -226,4 +226,4 @@ feedback_text_2:
   fr: |
     Mieux encore, si vous êtes passionné par les données et que vous cherchez un défi stimulant, venez travailler avec nous! Nous publions régulièrement les possibilités d’emploi au sein de notre équipe sur le {{ext_link "site Web" "https://www.canada.ca/fr/secretariat-conseil-tresor/organisation/possibilites-emploi.html"}} du Secrétariat du Conseil du Trésor. 
 
-    Pour toute rétroaction ou question sur l'InfoBase du GC, veuillez envoyer un courriel à gcinfobasefeedback-infobasedugcretroaction@tbs-sct.gc.ca.
+    Pour toute rétroaction ou question sur InfoBase du GC, veuillez envoyer un courriel à gcinfobasefeedback-infobasedugcretroaction@tbs-sct.gc.ca.

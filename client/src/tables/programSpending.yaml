@@ -33,10 +33,10 @@ programSpending:
    **Remarques:**
    * Les dépenses réelles de toutes les organisations correspondent à celle publiées dans les {{gl_tt "Comptes publics du Canada" "PA"}}.
    * Les dépenses prévues pour la plupart des organisations proviennent des {{gl_tt "plans ministériels" "DP"}}. Lorsque cette information n’est pas disponible (notamment pour les {{gl_tt "entités parlementaires" "PARL_ORG"}}, 
-    le Bureau du Secrétariat du gouverneur général, le Service canadien du renseignement de sécurité, le Centre de la sécurité des télécommunications, la section canadienne de la Commission mixte internationale et la plupart des {{gl_tt "sociétés d'État" "IFORM_CC"}}), l'InfoBase présente, à titre indicatif seulement, les chiffres de ces organisations dans leur {{gl_tt "budget principal des dépenses" "MAINS"}} de {{planning_year_1}} comme étant constant sur les trois années de planification.
+    le Bureau du Secrétariat du gouverneur général, le Service canadien du renseignement de sécurité, le Centre de la sécurité des télécommunications, la section canadienne de la Commission mixte internationale et la plupart des {{gl_tt "sociétés d'État" "IFORM_CC"}}), InfoBase présente, à titre indicatif seulement, les chiffres de ces organisations dans leur {{gl_tt "budget principal des dépenses" "MAINS"}} de {{planning_year_1}} comme étant constant sur les trois années de planification.
    * Un programme ne peut correspondre qu'à l'un des 16 secteurs d'activités du gouvernement du Canada. Toutefois un {{gl_tt "résultat stratégique" "SO"}} et une {{gl_tt "responsabilité essentielle" "CR"}} peuvent contribuer à plus d'un secteur d'activités.
-   * Pour l'InfoBase, les {{gl_tt "services internes" "INT_SERVICES"}} sont présentés en tant qu'un secteur des dépenses du gouvernement.
-   * Pour assurer la comparabilité au fil du temps, la composition et le nom des programmes présentés dans l'InfoBase correspondent à ceux utilisés dans les Comptes Publics du Canada et pourraient différer du rapport sur les résultats ministériel et du plan ministériel d’une organisation.
+   * Pour InfoBase, les {{gl_tt "services internes" "INT_SERVICES"}} sont présentés en tant qu'un secteur des dépenses du gouvernement.
+   * Pour assurer la comparabilité au fil du temps, la composition et le nom des programmes présentés dans InfoBase correspondent à ceux utilisés dans les Comptes Publics du Canada et pourraient différer du rapport sur les résultats ministériel et du plan ministériel d’une organisation.
 
 
    Dans les cas des données présentées qui correspondent à l’information qui a été publiée dans les Comptes publics du Canada et dans les plans ministériels {{planning_year_1}}, les totaux pourraient

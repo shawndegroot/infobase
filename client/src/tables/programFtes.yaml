@@ -50,8 +50,8 @@ programFtes:
     Aucun rajustement n’est effectué pour tenir compte des heures de travail.
 
     * Un programme ne peut correspondre qu'à l'un des 16 secteurs d'activités du gouvernement du Canada. Toutefois un {{gl_tt "résultat stratégique" "SO"}} et une {{gl_tt "responsabilité essentielle" "CR"}} peuvent contribuer à plus d'une activité.
-    * Pour l'InfoBase, les {{gl_tt "services internes" "INT_SERVICES"}} sont présentés en tant qu'un secteur des dépenses du gouvernement.
-    * Pour assurer la comparabilité au fil du temps, la composition et le nom des programmes présentés dans l'InfoBase correspondent à ceux utilisés dans les Comptes Publics du Canada et pourraient différer du rapport sur les résultats ministériel et du plan ministériel d’une organisation.
+    * Pour InfoBase, les {{gl_tt "services internes" "INT_SERVICES"}} sont présentés en tant qu'un secteur des dépenses du gouvernement.
+    * Pour assurer la comparabilité au fil du temps, la composition et le nom des programmes présentés dans InfoBase correspondent à ceux utilisés dans les Comptes Publics du Canada et pourraient différer du rapport sur les résultats ministériel et du plan ministériel d’une organisation.
 
 
     Toutes les données présentées correspondent à l’information qui a été publiée dans les rapports sur les résultats ministériels de {{pa_last_year_5}} à {{pa_last_year}} et dans les plans ministériels {{planning_year_1}}, quoique les totaux pourraient 

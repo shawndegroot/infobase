@@ -70,7 +70,7 @@ invalid_redirect_home:
 
     If you believe something is incorrect on our end, we invite you to alert us using the Report a Problem form provided at the bottom of the page. Thank you!
   fr: |
-    Votre navigateur a tenté de visiter l'une de nos infographies. Malheureusement, nous n'avons pas pu reconnaître "{{param}}" en tant que paramètre infographique valide. Vous avez été redirigé vers la page d'accueil l'InfoBase du GC.
+    Votre navigateur a tenté de visiter l'une de nos infographies. Malheureusement, nous n'avons pas pu reconnaître "{{param}}" en tant que paramètre infographique valide. Vous avez été redirigé vers la page d'accueil InfoBase du GC.
 
     Si vous connaissez le sujet de l'infographie en question (p. ex. le nom de l'organisation ou du programme), essayez de le trouver via la barre de recherche ci-dessous.
 

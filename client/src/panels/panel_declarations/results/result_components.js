@@ -17,7 +17,6 @@ import {
   status_key_to_glossary_key,
   ordered_status_keys,
   result_statuses,
-  result_simple_statuses,
   indicator_text_functions,
   get_result_doc_keys,
   result_docs,
@@ -246,7 +245,7 @@ const result_status_icon_components = (status, width) => {
     met: (
       <IconCheck
         key="met"
-        title={result_simple_statuses.met.text}
+        title={text_maker("met")}
         color={result_color_scale("met")}
         width={width}
         vertical_align={"0em"}
@@ -257,7 +256,7 @@ const result_status_icon_components = (status, width) => {
     not_met: (
       <IconAttention
         key="not_met"
-        title={result_simple_statuses.not_met.text}
+        title={text_maker("not_met")}
         color={result_color_scale("not_met")}
         width={width}
         vertical_align={"0em"}
@@ -268,7 +267,7 @@ const result_status_icon_components = (status, width) => {
     not_available: (
       <IconNotApplicable
         key="not_available"
-        title={result_simple_statuses.not_available.text}
+        title={text_maker("not_available")}
         color={result_color_scale("not_available")}
         width={width}
         vertical_align={"0em"}
@@ -279,7 +278,7 @@ const result_status_icon_components = (status, width) => {
     future: (
       <IconClock
         key="future"
-        title={result_simple_statuses.future.text}
+        title={text_maker("future")}
         color={result_color_scale("future")}
         width={width}
         vertical_align={"0em"}
@@ -329,10 +328,10 @@ const StatusIconTable = ({
               data-ibtt-html="true"
               data-ibtt-container="body"
             >
-              {result_simple_statuses[status_key].text}
+              {text_maker(status_key)}
             </span>
           ) : (
-            result_simple_statuses[status_key].text
+            text_maker(status_key)
           ),
           icon: large_status_icons[status_key],
         }))}
@@ -351,7 +350,7 @@ const StatusIconTable = ({
                 className="sr-only"
                 title={text_maker("glossary_link_title")}
               >
-                {result_simple_statuses[status_key].text}
+                {text_maker(status_key)}
               </a>
             </th>
           ))}
